@@ -142,12 +142,12 @@ console.log(array3);
 <strong>Slice()</strong>
 
 <script>
-var_ newArray = array1.slice(1,2)
-array3.slice("Novo Elemento");
-var list = array3.join(" - ");
-document.write("<p>Unshift(): " + array3 + "</p>");
-console.log("Shift(): ");
-console.log(array3);
+var arraySlice = new Array("First", 2, 3.0, "Last");
+var newArray = arraySlice.slice(0,1);
+var list = newArray.join(" - ");
+document.write("<p>Slice(): " + newArray + "</p>");
+console.log("Slice(): ");
+console.log(newArray);
 
 </script>
 
