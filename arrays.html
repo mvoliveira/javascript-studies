@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Arrays JS</title>
-  </head>
-  <body>
-    <h1>Arrays in JS</h1>
+<head>
+  <meta charset="utf-8">
+  <title>Arrays JS</title>
+</head>
+<body>
+  <h1>Arrays in JS</h1>
 
-<script>
+  <script>
   var array1 = new Array("Red", 10, 20.4);
   var array2 = Array("Blue", 12, 30.3, array1);
   var array3 = ["Orange", 10, 23.2, array1, array2];
@@ -27,172 +27,197 @@
   document.write("<p>Array 3:" + array3[3] + "</p>");
   document.write("<p>Array 3:" + array3[4] + "</p>");
 
-</script>
+  </script>
 
-<h1>Arrays Size</h1>
+  <h1>Arrays Size</h1>
 
-<script>
-var array1 = new Array("Red", 10, 20.4);
-var array2 = Array("Blue", 12, 30.3, array1);
-var array3 = ["Orange", 10, 23.2, array1, array2];
+  <script>
+  var array1 = new Array("Red", 10, 20.4);
+  var array2 = Array("Blue", 12, 30.3, array1);
+  var array3 = ["Orange", 10, 23.2, array1, array2];
 
-document.write("<p>Array 1:" + array1.length + "</p>");
-document.write("<p>Array 1:" + array2.length + "</p>");
-document.write("<p>Array 1:" + array3.length + "</p>");
+  document.write("<p>Array 1:" + array1.length + "</p>");
+  document.write("<p>Array 1:" + array2.length + "</p>");
+  document.write("<p>Array 1:" + array3.length + "</p>");
 
-</script>
-
-
-<h1>Removing elements</h1>
-
-<script>
-
-array1.length = 1;
-
-document.write("<p>Array 1:" + array1[0] + "</p>");
-document.write("<p>Array 1:" + array1[1] + "</p>");
-document.write("<p>Array 1:" + array1[2] + "</p>");
-
-</script>
-
-<h1>Method of Arrays</h1>
-
-<strong>Concat()</strong>
-
-<script>
-
-var array1 = new Array("Red", 10, 20.4);
-var array2 = Array("Blue", 12, 30.3, array1);
-array1 = array1.concat(array2);
-document.write("<p>Concat(): " + array1.length + "</p>");
-console.log("Concat(): ");
-console.log(array1);
-
-</script>
+  </script>
 
 
-<strong>Join()</strong>
+  <h1>Removing elements</h1>
 
-<script>
+  <script>
 
-var array1 = new Array("Red", 10, 20.4);
-var array2 = Array("Blue", 12, 30.3, array1);
-array1 = array1.concat(array2);
-var list = array1.join(" - ");
-document.write("<p>Join(): " + list + "</p>");
-console.log("Join(): ");
-console.log(list);
+  array1.length = 1;
 
-</script>
+  document.write("<p>Array 1:" + array1[0] + "</p>");
+  document.write("<p>Array 1:" + array1[1] + "</p>");
+  document.write("<p>Array 1:" + array1[2] + "</p>");
 
+  </script>
 
-<strong>Push()</strong>
+  <h1>Method of Arrays</h1>
 
-<script>
+  <strong>Concat()</strong>
 
-var array3 = new Array("Red", 10, 20.4);
-array3.push("New element");
-var list = array3.join(" - ");
-document.write("<p>Push(): " + array3 + "</p>");
-console.log("Push(): ");
-console.log(array3);
+  <script>
 
-</script>
+  var array1 = new Array("Red", 10, 20.4);
+  var array2 = Array("Blue", 12, 30.3, array1);
+  array1 = array1.concat(array2);
+  document.write("<p>Concat(): " + array1.length + "</p>");
+  console.log("Concat(): ");
+  console.log(array1);
 
-
-<strong>Pop()</strong>
-
-<script>
-
-array3.pop("New element");
-var list = array3.join(" - ");
-document.write("<p>Pop(): " + array3 + "</p>");
-console.log("Pop(): ");
-console.log(array3);
-
-</script>
+  </script>
 
 
-<strong>Shift()</strong>
+  <strong>Join()</strong>
 
-<script>
+  <script>
 
-array3.shift();
-var list = array3.join(" - ");
-document.write("<p>Shift(): " + array3 + "</p>");
-console.log("Shift(): ");
-console.log(array3);
+  var array1 = new Array("Red", 10, 20.4);
+  var array2 = Array("Blue", 12, 30.3, array1);
+  array1 = array1.concat(array2);
+  var list = array1.join(" - ");
+  document.write("<p>Join(): " + list + "</p>");
+  console.log("Join(): ");
+  console.log(list);
 
-</script>
-
-<strong>Unshift()</strong>
-
-<script>
-
-array3.unshift("Novo Elemento");
-var list = array3.join(" - ");
-document.write("<p>Unshift(): " + array3 + "</p>");
-console.log("Unshift(): ");
-console.log(array3);
-
-</script>
+  </script>
 
 
+  <strong>Push()</strong>
 
-<strong>Slice()</strong>
+  <script>
 
-<script>
+  var array3 = new Array("Red", 10, 20.4);
+  array3.push("New element");
+  var list = array3.join(" - ");
+  document.write("<p>Push(): " + array3 + "</p>");
+  console.log("Push(): ");
+  console.log(array3);
 
-var arraySlice = new Array("First", 2, 3.0, "Last");
-var newArray = arraySlice.slice(0,1);
-var list = newArray.join(" - ");
-document.write("<p>Slice(): " + newArray + "</p>");
-console.log("Slice(): ");
-console.log(newArray);
-
-</script>
-
-
-<strong>Splice()</strong>
-
-<script>
-
-var arraySplice = new Array("First", 2, 3.0, "Last");
-arraySplice.splice(1,2,"A","B","C","D");
-var list = newArray.join(" - ");
-document.write("<p>Splice(): " + arraySplice + "</p>");
-console.log("Splice(): ");
-console.log(arraySplice);
-
-</script>
+  </script>
 
 
-<strong>Reverse()</strong>
+  <strong>Pop()</strong>
 
-<script>
+  <script>
 
-var arrayReverse = new Array("A", "B", "C", "D");
-arrayReverse.reverse();
-var list = arrayReverse.join(" - ");
-document.write("<p>Reverse(): " + arrayReverse + "</p>");
-console.log("Reverse(): ");
-console.log(arrayReverse);
+  array3.pop("New element");
+  var list = array3.join(" - ");
+  document.write("<p>Pop(): " + array3 + "</p>");
+  console.log("Pop(): ");
+  console.log(array3);
 
-</script>
+  </script>
 
 
-<strong>Sort()</strong>
+  <strong>Shift()</strong>
 
-<script>
+  <script>
 
-var arraySort = new Array(5, 3, 4, 2, 0, 1);
-arraySort.sort();
-var list = arraySort.join(" - ");
-document.write("<p>Sort(): " + arraySort + "</p>");
-console.log("Sort(): ");
-console.log(arraySort);
+  array3.shift();
+  var list = array3.join(" - ");
+  document.write("<p>Shift(): " + array3 + "</p>");
+  console.log("Shift(): ");
+  console.log(array3);
 
-</script>
+  </script>
 
-  </body>
+  <strong>Unshift()</strong>
+
+  <script>
+
+  array3.unshift("Novo Elemento");
+  var list = array3.join(" - ");
+  document.write("<p>Unshift(): " + array3 + "</p>");
+  console.log("Unshift(): ");
+  console.log(array3);
+
+  </script>
+
+
+
+  <strong>Slice()</strong>
+
+  <script>
+
+  var arraySlice = new Array("First", 2, 3.0, "Last");
+  var newArray = arraySlice.slice(0,1);
+  var list = newArray.join(" - ");
+  document.write("<p>Slice(): " + newArray + "</p>");
+  console.log("Slice(): ");
+  console.log(newArray);
+
+  </script>
+
+
+  <strong>Splice()</strong>
+
+  <script>
+
+  var arraySplice = new Array("First", 2, 3.0, "Last");
+  arraySplice.splice(1,2,"A","B","C","D");
+  var list = newArray.join(" - ");
+  document.write("<p>Splice(): " + arraySplice + "</p>");
+  console.log("Splice(): ");
+  console.log(arraySplice);
+
+  </script>
+
+
+  <strong>Reverse()</strong>
+
+  <script>
+
+  var arrayReverse = new Array("A", "B", "C", "D");
+  arrayReverse.reverse();
+  var list = arrayReverse.join(" - ");
+  document.write("<p>Reverse(): " + arrayReverse + "</p>");
+  console.log("Reverse(): ");
+  console.log(arrayReverse);
+
+  </script>
+
+
+  <strong>Sort()</strong>
+
+  <script>
+
+  var arraySort = new Array(5, 3, 4, 2, 0, 1);
+  arraySort.sort();
+  var list = arraySort.join(" - ");
+  document.write("<p>Sort(): " + arraySort + "</p>");
+  console.log("Sort(): ");
+  console.log(arraySort);
+
+  </script>
+
+  <strong>Sort() with callback</strong>
+
+  <script>
+
+  var arraySort = new Array(5, 3, 4, 2, 0, 1);
+  function desc(a,b){
+    if(a>b){
+      return - 1;
+    }
+    if(a<b){
+      return 1;
+    }
+    if(a = b){
+      return 0;
+    }
+  }
+
+  arraySort.sort(desc);
+  var list = arraySort.join(" - ");
+  document.write("<p>Sort(): " + arraySort + "</p>");
+  console.log("Sort(): ");
+  console.log(arraySort);
+
+  </script>
+
+</body>
 </html>
