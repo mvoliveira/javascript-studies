@@ -64,7 +64,22 @@ document.write("<p>Array 1:" + array1[2] + "</p>");
 var array1 = new Array("Red", 10, 20.4);
 var array2 = Array("Blue", 12, 30.3, array1);
 array1 = array1.concat(array2);
+document.write("<p>Concat(): " + array1.length + "</p>");
+console.log("Concat(): ");
 console.log(array1);
+</script>
+
+<strong>Join()</strong>
+
+<script>
+
+var array1 = new Array("Red", 10, 20.4);
+var array2 = Array("Blue", 12, 30.3, array1);
+array1 = array1.concat(array2);
+var list = array1.join(" - ");
+document.write("<p>join(): " + list + "</p>");
+console.log("Concat(): ");
+console.log(list);
 </script>
 
   </body>
