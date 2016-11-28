@@ -238,6 +238,7 @@
 
 
   <strong>IndexOf(searchElement[, fromIndex])</strong>
+  <strong>IndexOf search element by a Index.</strong>
 
   <script>
 
@@ -248,6 +249,17 @@
 
   </script>
 
+  <strong>IndexOf(searchElement[, lastIndexOf])</strong>
+  <strong>IndexOf search element by the last Index.</strong>
+
+<script>
+
+var array1 = new Array("orange","green","blue","red","green","blue");
+var ret = array1.lastIndexOf("green");
+document.write("<p>IndexOf: " + ret + " Value = " + array1[ret] + "</p>");
+console.log(ret);
+
+</script>
 
 </body>
 </html>
