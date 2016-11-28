@@ -246,6 +246,7 @@
   var ret = array1.indexOf("blue",2);
   document.write("<p>IndexOf: " + ret + " Value = " + array1[ret] + "</p>");
   console.log(ret);
+  //
 
   </script>
 
@@ -254,8 +255,21 @@
 
   <script>
 
-  var array1 = new Array("orange","blue","blue","red","green");
-  var ret = array1.lastIndexOf("blue",2);
+  var array1 = new Array("orange","blue","red","red","green");
+  var ret = array1.lastIndexOf("blue");
+  document.write("<p>IndexOf: " + ret + " Value = " + array1[ret] + "</p>");
+  console.log(ret);
+
+  </script>
+
+
+  <strong>IndexOf(searchElement[, lastIndexOf])</strong>
+  <strong>IndexOf search element by the last Index with param.</strong>
+
+  <script>
+
+  var array1 = new Array("orange","blue","red","red","green","blue");
+  var ret = array1.lastIndexOf("blue",1);
   document.write("<p>IndexOf: " + ret + " Value = " + array1[ret] + "</p>");
   console.log(ret);
 
