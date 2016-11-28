@@ -248,14 +248,14 @@
   console.log(ret);
 
   </script>
-  
+
   <strong>IndexOf(searchElement[, lastIndexOf])</strong>
   <strong>IndexOf search element by the last Index.</strong>
 
   <script>
 
-  var array1 = new Array("orange","green","blue","red","green","blue");
-  var ret = array1.lastIndexOf("green");
+  var array1 = new Array("orange","blue","blue","red","green");
+  var ret = array1.lastIndexOf("blue",2);
   document.write("<p>IndexOf: " + ret + " Value = " + array1[ret] + "</p>");
   console.log(ret);
 
