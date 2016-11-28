@@ -137,17 +137,31 @@ console.log(array3);
 
 </script>
 
-</script>
 
 <strong>Slice()</strong>
 
 <script>
+
 var arraySlice = new Array("First", 2, 3.0, "Last");
 var newArray = arraySlice.slice(0,1);
 var list = newArray.join(" - ");
 document.write("<p>Slice(): " + newArray + "</p>");
 console.log("Slice(): ");
 console.log(newArray);
+
+</script>
+
+
+<strong>Splice()</strong>
+
+<script>
+
+var arraySplice = new Array("First", 2, 3.0, "Last");
+arraySplice.splice(1,2,"A","B","C","D");
+var list = newArray.join(" - ");
+document.write("<p>Splice(): " + arraySplice + "</p>");
+console.log("Splice(): ");
+console.log(arraySplice);
 
 </script>
 
